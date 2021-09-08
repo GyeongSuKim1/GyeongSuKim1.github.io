@@ -2,27 +2,33 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	 <meta name="viewport"
+	  content="width=device-width, initial-scale=1.0">
+	  
 	<title> 210905 </title>
 </head>
 <body>
 
 <h2> 서버와 클라이언트(form) </h2>
-	<p>
-	  form은 사용자가 입력한 데이터(입력값)를 서버로 보내기 위해 사용하는 태그
-	 <sub>(서버란,정보를 제공하는 호스트)
+	
+<p>
+	  		form은 사용자가 입력한 데이터(입력값)를 서버로 보내기 위해 사용하는 태그
+	 <sub>	(서버란,정보를 제공하는 호스트)
 	 </sub>
-	</p>
+</p>
 
-	<p>
-	 사용자(클라이언트)가 요청을 하면, 서버는 그에 대한 응답으로 정보를 제공 <br> 
-	 <sub> ex)사용자가 검색창에 주소를 입력- 호스트에게 요청-호스트는 응답으로 검색창에대한 결과페이지를 보냄 
-	 </sub> <br>
-	 사용자(클라이언트)가 어떤 요청을 보내는가에 따라 응답은 달라질수 있다, 로그인 양식은 세개의 입력 요소로 구성되어 있으며, <br> 세개의 입력 데이터는 form을 통해 서버로 전송된다
-	</p> <hr>
+<p>
+		 사용자(클라이언트)가 요청을 하면, 서버는 그에 대한 응답으로 정보를 제공 
+	<br> 
+	  <sub>	 ex)사용자가 검색창에 주소를 입력- 호스트에게 	요청-호스트는 응답으로 검색창에대한 결과페이지를 보냄 
+	  </sub>
+	<br>
+		 사용자(클라이언트)가 어떤 요청을 보내는가에 따라 응답은 달라질수 있다, 로그인 양식은 세개의 입력 요소로 구성되어 있으며, <br> 세개의 입력 데이터는 form을 통해 서버로 전송된다
+</p> <hr>
 
-	<p>
-	 from은 입력 요소들을 감싸며, 입력 값을 서버 측으로 제출(submit)할 수 있다.
-	</p>
+<p>
+	 	from은 입력 요소들을 감싸며, 입력 값을 서버 측으로 제출(submit)할 수 있다.
+</p>
 		<img src="img/ID,PS.jpg"> 
 	<br>
 		결과값 ↓
@@ -33,9 +39,9 @@
 		<input type="password" placeholder="비밀번호"> 
 	</form> <hr>
 
-	<p>
+<p>
 	 form의 내용(입력값)을 제출하기 위해 input 태그의 submit타입 사용 가능
-	</p>
+</p>
 		<img src="img/ID,PS2.jpg">
 	<br>
 		결과값 ↓
@@ -55,34 +61,35 @@
     <hr>
 
 <h2> form의 속성들</h2>
-	<p>
+	
+<p>
 		  대표적 속성 두가지 
-		<br>
+	<br>
 	  	action : 입력값을 전송할 서버의 url 
-		<sub>
+	  <sub>
 	 	 (url은 서버 프로그램의 주소나 파일명등을 의미함)
-		</sub>
-		<br>
+	  </sub>
+	<br>
 	 	 method : 입력 값을 전송할때의 방식(get&post)
-	</p>
+</p>
 
 		<img src="img/form.jpg">
 			 <!--php란 서버 프로그램을 만드는 형식의 일종-->
-	<p>
+<p>
 		ABC.php 라는 서버 프로그램으로 입력값을 전송하여 요청할 것이다. post방식으로 전송할 것이다.
-	</p>
+</p>
 
-	<p>
+<p>
 		get : 서버에 요청을 보내어 응답을 받아낸다
-	  <br>
+	<br>
 		서버로부터 정보를 '가져오겠다'는 성격의 요청이다.
-	  <br> <br>
+	<br> <br>
 		post : 서버에 요청을 보내어 작업을 수행한다 서버에 있는 데이터를 
-	  <br>
+	<br>
 	    추가/수정/삭제 한 후에 응답을 받아낸다. 서버의 정보를 '조작하겠다'는 성격의 요청
-	</p>
+</p>
 
-	<strong>Ex)</strong>
+		<strong>Ex)</strong>
 	<form action="ABC.php" method="post">
 		<input type="text" placeholder="텍스트를넣고" name="설명">
 	<br>
@@ -97,25 +104,31 @@
 	</form> <br>
 
 		<img src="img/form2.jpg">
-	<p>
+<p>
 		  일단 name이 가장 중요 name="설명" 이 num 요소에는 어떤 벨류가 선택 되었다 이런 정보가 모여서 ABC.php로 전송됨  
-	</p> <hr>
+</p> <hr>
 
 <h1>내용 정리</h1>
 
-	<p style="color: red;">
-		1.form은 사용자가 입력 요소에 입력한 데이터를 서버로 전송해준다.
-	<br>
-		2.서버란 데이터를 제공하는 호스트이다.
-	<br>
-		3.클라이언트란 데이터를 제공받아 이용하는 사용자 이다.
-	<br>
-		4.form은 입력 요소(input,select,textarea 등등)를 감싸고, 데이터를 제출(submit)한다.
-	<br>
-		5.form의action은 서버 측 주소를 지정하는 속성이다.
-	<br>
-		6.form의 method는 데이터 전송 방식을 지정하는 속성이다.
-	</p>
+<ol style="color: red;">
+	<li>	form은 사용자가 입력 요소에 입력한 데이터를 서버로 전송해준다.
+	</li>
+	
+	<li>	서버란 데이터를 제공하는 호스트이다.
+	</li>
+
+	<li>	클라이언트란 데이터를 제공받아 이용하는 사용자 이다.
+	</li>
+
+	<li>	form은 입력 요소(input,select,textarea 등등)를 감싸고, 데이터를 제출(submit)한다.
+	</li>
+
+	<li>	form의action은 서버 측 주소를 지정하는 속성이다.
+	</li>
+		
+	<li>	form의 method는 데이터 전송 방식을 지정하는 속성이다.
+	</li>
+</ol>
 
 
 
