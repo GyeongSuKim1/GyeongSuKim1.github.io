@@ -2,10 +2,99 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	 <meta name="viewport"
+	  content="width=device-width, initial-scale=1.0">
+
 	<title> 210827 </title>
 </head>
 <body>
 
+<h2>HTML5 기본 구조&시맨틱 태그</h2>
+
+		<img src="img/rlqhs.jpg">
+	<br>
+<p>
+		위 사진은 HTML File을 만들면 기본적으로 생성되는 시맨틱 태그들이다. 
+	<br>
+		순서대로 정리하자면
+ <ul>
+ 	 <li>
+ 	 	1. 최신표준 HTML이란 뜻 
+ 	 </li>
+
+ 	 <li>
+ 	 	2. 이 파일은 HTML이라고 정의 내리고 항상 마지막은 &lt;/html&gt; 로 마무리 해줘야 함.
+ 	 </li>
+
+ 	 <li>
+ 	 	3. 이 영역에는 &lt;meta&gt;,&lt;title&gt;,&lt;style&gt; 등등의 시맨틱 태그가 들어감
+ 	<br>
+ 		meta는 인코딩 타입,title는 문서의 제목,style에는 자바스크립트나 css를 넣음
+ 	 </li>
+
+ 	 <li>
+ 	 	7. body영역에 코드들이 들어가면 웹 브라우저에 표시, 또 대부분의 시맨틱 태그들이 이 영역에서 사용됨.
+ 	<br>
+ 		아래 정리할 태그들이 화면을 구성
+ 	 </li>
+ </ul>
+</p>
+
+		<img src="img/영역.jpg">
+	<br>
+<p>
+ <ul>
+ 	 <li>
+ 	 	<strong>&lt;header&gt;</strong>
+ 	 </li>
+ 		위에서 언급한&lt;head&gt;는 &lt;html&gt;바로 밑에 쓰이지만 &lt;header&gt;는&lt;body&gt;안에 있기 때문에 둘은 전혀 다름
+ 	<br>
+ 		&lt;header&gt;은 주로 머리말,제목을 표현하기 위해 쓰임
+ 	 
+ 	 <li>
+ 	 	<strong>&lt;nav&gt;</strong>
+ 	 </li>
+ 		HTML5에서 새롭게 생긴 시맨틱태그, 콘텐츠를 담고 있는 문서를 사이트간에 서로 연결하는
+ 	<br>
+ 		링크의 역활을 담당. &lt;nav&gt;는 주로 메뉴에 사용되고 위치에 영향을 받지 않아 어디에서든 사용 가능 
+ 	 
+ 	 <li>
+ 	 	<strong>&lt;section&gt;</strong>
+ 	 </li>
+ 		&lt;body&gt;영역은 콘텐츠를&lt;header&gt;,&lt;section&gt;,&lt;footer&gt;의 3가지 공간에 콘텐츠를 저장하는데 
+ 	<br>
+ 		그중 &lt;section&gt;은 본문 콘텐츠를 담고있음. &lt;section&gt;안에 &lt;section&gt;을 넣는 것도 가능함.
+
+ 	 <li>
+ 	 	<strong>&lt;article&gt;</strong>
+ 	 </li>
+ 	 	&lt;section&gt;이 콘텐츠를 분류한다면 &lt;article&gt;는 태그안에 실질적인 내용을 넣음 . 
+ 	<br>
+ 		예를 들어 대분류는&lt;section&gt;이고 내용은 &lt;article&gt;에 넣음
+
+ 	 <li>
+ 	 	<strong>&lt;aside&gt;</strong>
+ 	 </li>
+		본문 이외의 내용을 담고 있는 시맨틱 태그, 주로 본문옆에 광고를 달거나 링크들을 이 공간에 넣어 표현 
+
+	 <li>
+	 	<strong>&lt;footer&gt;</strong>
+	 </li>
+	 	화면의 구조 중 제일 아래에 위치, 보통 웹 브라우저를 보면 회사소개,저작권,약권,제작정보 등이 들어감
+	<br>
+	 	<sub>
+	 		(연락처는 &lt;address&gt;태그를 사용하여 표시)
+	 	</sub>
+
+	 <li>
+	 	<strong>&lt;div&gt;</strong>
+	 </li>
+	 	위 사진에는 없지만 &lt;div&gt;는 HTML5에 와서 글자나 사진등 콘텐츠들을 묶어서 css스타일을 적용시킬때 사용
+ </ul>
+</p>
+
+
+<hr>
 	<h1 style="color: red;">텍스트 태그 연습</h1>
 		<p >연습하고 있습니다 </p>
 
