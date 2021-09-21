@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
+
+<!--
+  <style>
+/* style 태그 안에는 css코드를 작성해야 함 */
+  	p
+  	 { 
+  		color: red;
+  		font-size: 32px; 
+  	 }
+  </style> -->
+
 <head>
+		<!--
+ <link href="img/연습css.css" rel="stylesheet">
+		-->
 	<meta charset="utf-8">
 	 <meta name="viewport"
 	  content="width=divice-width, initial-scale=1.0">
 
 	<title>210918</title>
+
+		<style>
+			ol{
+				color: red;
+			}
+		</style>
+
 </head>
 <body>
 
@@ -26,6 +47,7 @@
 	<br>
 		<img src="img/css ex.jpg"
 		 src="ex)코드" width="250">
+
  <ul> <strong>
  		<li>선택자 : p태그에 스타일을 적용하겠음</li>
  		<li>{} : 이 안에 p태그에 대한 스타일을 정의하겠다</li>
@@ -41,8 +63,93 @@
  			다양한 스타일이 적용될수 있도록 하는게 css의 역활 !! 
  	<br>
  		<sub>Tip! css에서 주석은 /* 내용 */ 이다</sub>
-</strong> </p>
+</strong> </p>	<hr>
 
+<h2>html에 css를 더하는법</h2>
+
+ <ul> <strong>
+			html문서에 css문서 를 적용하고자 할 때는
+		<li>인라인 스타일 : 태그에 직접 기술</li>
+		<li>스타일 태그 : 스타일시트를 위한 태그를 추가하여 기술</li>
+		<li>문서 간의 연결 : 스타일시트 문서를 따로 작성하여 html문서와 연결</li>
+ </ul> </strong>
+<hr>
+
+<ul> 
+	<strong style="color: red;">인라인 태그</strong>
+
+ 		<li>	
+ 			태그에 style속성을 추가하여 요소에 직접적으로 스타일을 정의하는 방식.
+ 	<br>
+ 			따라서 선택자는 필요없음
+ 	<br>
+ 			웹 콘텐츠와 스타일시트가 분리되지않아 사용하지 않는 편이 좋음
+	<br>
+		</li>
+	 <strong>Ex</strong>
+	<br>
+		<img src="img/css인라인.jpg">
+ </ul>
+<hr>
+
+ <ul>
+ 	 <strong style="color: red;">스타일 태그</strong>
+ 		<li>
+ 			html문서에 &lt;style&gt; &lt;/style&gt;태그를 추가하여 그 안에 css코드를 작성함
+ 		</li>
+ 	 <strong>Ex</strong>
+ 	<br>
+ 		<img src="img/css스타일태그.jpg">
+ </ul> 
+<hr>
+
+ <ul>
+ 	 <strong style="color: red;">문서 간의 연결</strong>
+ 		<li>
+ 			확장자가 ~~.css인 스타일시트 파일을 생선하고 그 안에 css코드를 작성한 다음,
+ 	<br>
+ 			html문서에 연결해줄수 있음. 이때 &lt;link&gt; 태그를 사용
+ 		</li>
+ 	 <strong>Ex</strong>
+ 	<br>
+ 	   <img src="img/css문서연결.jpg">
+ 		<li>
+ 			href : 연결하고자 하는 외부 소스의 url일 기술하는 속성
+ 		</li>
+
+ 		<li>
+ 			rel 현재 문서(html)과 외부 소스의 연관 관계를 기술하는 속성 
+ 		</li>
+ 			=&lt;link&gt; 태그는 html문서의 &lt;head&gt;&lt;/head&gt; 내부에 사용해야 함 
+ </ul> <hr>
+
+<ol>
+	 <strong>내용 정리</strong>
+		<li>
+			css코드는 선택자, 중괄호 영역, 속성명, 속성값 등으로 구성됨 
+		</li>
+
+		<li>
+			css코드에도 주석을 사용할 수 있음. /*주석*/
+		</li>
+
+		<li>
+			css코드를 html문서에 적용하기 위해서는 인라인스타일, 스타일 태그,
+	<br>
+			외부 문서 연결 등의 방식을 사용해야함
+		</li>
+
+		<li>
+			css의 우선순위는
+	<br>
+			body내 선언&gt;head내 선언&gt;css개별문서 순이다
+	<br> <br>
+		(예를들어 h1 태그를 css 문서에서 꾸며서 html에 연결했는데 이 문장만 바꾸고싶으면
+	<br>
+		 html내에서 선언하면댐)
+		</li>
+</ol>
+	
 
 
 
