@@ -1,3 +1,27 @@
+/* 태그 선택자*/
 p {
+	color: red;
+}
+
+
+/*전체 선택자*/
+*{
+	color: red;
+}
+
+/*클래스 선택자*/
+.text{
+	color: red;
+}
+
+
+/*아이디 선택자*/
+
+#Ptt{
+	color: palevioletred;
+}
+
+/*그룹 선택자*/
+h1, p, div{
 	color: red;
 }
