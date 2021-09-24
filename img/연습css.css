@@ -1,27 +1,26 @@
 /* 태그 선택자*/
-p {
-	color: red;
-}
+p { color: red; }
 
 
 /*전체 선택자*/
-*{
-	color: red;
-}
+* { color: red; }
 
 /*클래스 선택자*/
-.text{
-	color: red;
-}
+.text { color: red; }
 
 
 /*아이디 선택자*/
 
-#Ptt{
-	color: palevioletred;
-}
+#Ptt { color: palevioletred; }
 
 /*그룹 선택자*/
-h1, p, div{
-	color: red;
-}
+h1, p, div { color: red; }
+
+/*블록 레벨 요소인 div 요소를 인라인으로 처리*/
+div{ display: inline; }
+
+/*인라인 요소인 a요소를 블록 레벨로 처리*/
+a{ display: block; }
+
+/*border속성*/
+span{ border: 2px solid red; }
