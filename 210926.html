@@ -8,14 +8,24 @@
 
 <style>
 
-	div{
-		padding: 10px; /*안쪽 여백*/
-		border: 3px solid red; /*경계선(테두리)*/
-		margin: 20px; /*바깥 여백*/
-		width: 88px; height: 33px;
-		 }
-	#red{ color: red; font-size: 20px; }
-	.px{color: red; font-size: 20px;}
+	span{
+		display: inline-block;
+		width: 100px; height: 100px;
+		padding: 10px;
+		border: 5px solid red;
+		margin: 20px;
+
+		padding-top: 11px;
+		padding-right: 22px;
+		padding-bottom: 33px;
+		padding-left: 44px;
+
+		margin-top: 11px;
+		margin-right: 22px;
+		margin-bottom: 33px;
+		margin-left: 44px;
+	}
+	.red{color: red; font-size: 20px;}
 	.pink{color: hotpink; font-size: 20px;}
 	h2{ color: red; }
 	sup{ color: gray; }
@@ -87,7 +97,7 @@
 
  <ol style="color: red;">
 
- 	 <strong id="red">
+ 	 <strong class="red">
  	 		내용 정리
  	 </strong>
 
@@ -102,5 +112,59 @@
 <hr>
 
  <h2>상하좌우 여백 다르게 지정</h2>
+
+     <strong class="pink">padding과 margin</strong>
+    <br>
+     	<img src="img/css박스모델.jpg"
+     	 width="300">
+ <p>
+ 			위 사진을 보면 테두리를 기준으로 안쪽에 형성되는 여백은 padding
+ 	<br>
+ 			바깥 쪽은 margin으로 정리해줌
+ </p> 
+<hr>
+
+ <div>
+ 	 <strong class="pink">
+ 	 		다양한 경우의 수
+ 	 </strong>
+ 	<br>
+ 	  <strong> 
+  			여백은 상하좌우 네 개의 면에 존재하는 영역
+  	<br>
+  			작성자는 각 면에 개별적으로 두께를 정의할수 있음.
+  	<br>
+  			이를 위해 다음 두가지 방법을 사용
+  	 </strong> 
+ </div>
+  <ul>
+   <li class="pink">
+  			하위 속성 정의하기
+   </li>
+  			상하좌우 여백을 정의할 수 있는 개별 속성들이 있음
+  	<br>
+  		<img src="img/csspadding.jpg"
+  		 alt="페딩 상하좌우" width="300">
+  	<br>
+  	 <sup>
+  	 		=margin 에도 동일한 접미사를 붙여 개별 정의할 수 있음.
+  	 </sup>
+  	<br>
+  	 <strong>Ex</strong>
+  	<br>
+  		<img src="img/cssA.jpg"
+  		 alt="상하좌우"> =
+  		<img src="img/cssB.jpg"
+  		 alt="상하좌우"> =
+  	  <span></span>
+
+
+
+
+
+  </ul>
+
+
+
 </body>
 </html>
