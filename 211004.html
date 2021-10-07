@@ -7,6 +7,7 @@
 	<title>211004</title>
 
 <style>
+	h3 { color: hotpink; }
 	h2,ol { color: red; }
 	sup { color: gray; }
 	.pink { color: hotpink; font-size: 20px; }
@@ -23,7 +24,8 @@
  			position이 요소의 배치 방법을 결정하면,
  	<br>
  			top,bottom,right,left가 최정 위치를 결정하는 방식.
- 	<br> <br>
+<hr>
+ 	<br>
  	 <strong style="font-size: 22px;">
  	 		Ex
  	 </strong>
@@ -38,5 +40,98 @@
 	 </sup>
  </p>
 
+  <table border="1" width="600">
+
+   <caption class="pink">
+			position속성값
+   </caption>
+
+	  <tr bgcolor="#90E4FF">
+	 	<th>속성값</th>
+	 	<th>의미</th>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">static</td>
+	  	<td>기본값, 요소를 일반적인 문서 흐름에 따라 배치한다.</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">relative</td>
+	  	<td>
+	  		일반적인 문서 흐름에 따라 배치하되, 상하좌우 위치 값에 따라 오프셋을 적용한다.
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">absolute</td>
+	  	<td>
+	  		일반적인 문서 흐름에서 제거하고,
+	<br>
+			 가장 가까운 position 지정 요소에 대해 상대적으로 오프셋을 적용한다.
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">fixed</td>
+	  	<td>
+	  		일반적인 문서 흐름에서 제거하고, 지정된 위치에 고정된다.
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">sticky</td>
+	  	<td>
+	  		일반적인 문서 흐름에서 제거하고,
+	<br>
+			스크롤 동작이 존재하는 가장 가까운 요소에 대해 오프셋을 적용한다.
+	  	</td>
+	  </tr>
+  </table>
+  	 <sup>
+  	 	아래 정리
+  	 </sup>
+
+ <hr>
+
+	 <strong class="pink">
+	 		position: relative;
+	 </strong>
+ <p>
+ 			요소를 일반적인 문서 흐름에 따라 배치하되, 	상하좌우 위치값에 따라 오프셋을 적용함.
+ 	<br>
+ 			오프셋(보충)이란, 위치를 얼마간 이동시키는 것을 의미
+ 	<br>
+ 	 <strong>
+ 	 		Ex
+ 	 </strong>
+ 	<br>
+ 		<img src="img/csspositionR.jpg"
+ 		 alt="relative">
+ 	<br>
+ 	 <sup>
+ 	 		=원래 위치보다 위50px, 왼쪽50px 떨어짐
+ 	 </sup>
+ </p>
+
+ <hr>
+ 	 <strong class="pink">
+	 		position: absolute;
+	 </strong>
+ <p>
+ 			요소를 일반적인 문서 흐름에서 제거하고, 상위 요소중 가장 가까운 position지정 요소에
+ 	<br>
+ 			대해 상대적으로 오프셋을 적용함.
+ 	<br>
+ 			position 지정요소란, position속성에 속성값이 정의되어 있는 요소
+ 	<br>
+ 	 <strong>
+ 	 		Ex
+ 	 </strong>
+ 	<br>
+ 		<img src="">
+ </p>
+
+   		
 </body>
 </html>
