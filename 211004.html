@@ -151,14 +151,65 @@
  <p>
  			요소를 일반적인 문서 흐름에서 제거하고, 지정된 위치에 고정시킴
  	<br>
- 		<img src="img/cssfixd.jpg"
+ 		<img src="img/cssfixed.jpg"
  		 alt="픽스드">
  	<br>
  	 <sup>
  	 		=위50px, 왼쪽50px 떨어진 자리에서 움직이지 않는다.
  	 </sup>
+ 	<br>
+ 			문서의 흐름에서 제외돼서 고정 돼있기 때문에 스크롤을 내려도 고정되어있음.
  </p>
 
-   		
+<hr>
+
+	 <strong class="pink">
+	 		fosition: sticky;
+	 </strong>
+ <p>
+ 			요소를 일반적인 문서 흐름에 따라 배치하고, 스크롤(scroll) 되는 가장 가까운
+ 	<br>
+ 			상위 요소에 대해 오프셋을 적용
+ 	<br>
+ 		<img src="img/csssticky.jpg"
+ 		 alt="스티키">
+ 	<br>
+ 	 <sup>
+ 	 		=스크롤 이동으로 요소가 움직여도 스티키 요소는 고정된 상태를 유지함
+ 	 </sup>
+ 	<br>
+ 			기본적으로는 문서의 흐름대로 가는데 스크롤 이동이 이루어질때 그 특성을 발휘함
+ </p>
+
+<hr>
+
+  <ol>
+  	 <strong style="font-size: 20px;">
+  	 		내용 정리
+  	 </strong>
+  		<li>
+  			position은 문서 상에 요소를 배치하는 방법을 정의함. 기본값은 static
+  		</li>
+  		<li>
+  			top,bottom,right,left를 선택적으로 사용해 위치를 지정.
+  		</li>
+  		<li>
+  			relative는 자기의 원래 위치를 기준으로 오프셋을 적용.
+  		</li>
+  		<li>
+  			absolute는 가장 가까운 포지션 요소를 기준으로 오프셋을 적용.
+  		</li>
+  		<li>
+  			fixed는 고정되어 움직이지 않는다. 스크롤을 이동해도 고정됨
+  		</li>
+  		<li>
+  			sticky는 스크롤 되는 상위 요소를 기준으로 오프셋을 적용.
+  		</li>
+  </ol>
+
+
+
+
+
 </body>
 </html>
