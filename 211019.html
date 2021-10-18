@@ -2,12 +2,22 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	 <meta name="viewport"content="width=device-width, initial-scale=1.0">
 	<title>211019</title>
+
 <style>
 	h3 { color: hotpink; }
 	h2,ol { color: red; }
 	sup { color: gray; }
 	.pink { color: hotpink; font-size: 20px; }
+
+	.coo{
+		display: flex;
+		width: 300px; height: 300px;
+		border: 1px solid black;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	.Ex{
 		width: 200px; height: 284px;
@@ -39,6 +49,41 @@
 		justify-content: space-between;
 	}
 
+	.Ex2{
+		width: 200px; height: 284px;
+		border: 1px solid black;
+	}
+
+	.align-items{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.align-items2{
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.align-items3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.align-items4{
+		display: flex;
+		justify-content: space-between;
+		align-items: space-around;
+	}
+
+	.align-items5{
+		display: flex;
+		justify-content: space-between;
+		align-items: space-between;
+	}
+
 	.num1{
 		width: 50px; height: 40px;
 		background: #FFA7A7;
@@ -64,6 +109,7 @@
 		background: #B2EBF4;
 	}
 </style>
+
 </head>
 <body>
 
@@ -71,7 +117,8 @@
  <p>
  			flexbox를 다루기 위해 아래와 같은 속성들을 사용할 수 있다.
  </p>
-
+ 		<img src="img/cssflex3.jpg"
+ 		 alt="주,교차 축">
   <ul> 
   		 <!--저스티파이 컨텐츠-->
      <li>
@@ -188,12 +235,64 @@
 	 <sup>
 	 		순서대로 flex-start, flex-end, center, space-around, space-between
 	 </sup>
-	 
+
+<hr>
+
 		<li>
 	 <strong class="pink">
 			교차축 배치 방법 : align-items
 	 </strong>
 		</li>
+			주축을 flex-start로 만들었으니 교차축은 flex-end로 만듬
+	<br> <br>
+	 <strong>
+	 		Ex
+	 </strong>
+이건 왜 안되는거야ㅐ
+<div class="Ex2">
+ <div class="align-items">
+  <div class="num1">1</div>
+  <div class="num1">2</div>
+  <div class="num1">3</div>
+ </div>
+ 		<br>
+ <div class="align-items2">
+  <div class="num2">1</div>
+  <div class="num2">2</div>
+  <div class="num2">3</div>
+ </div>
+ 		<br>
+ <div class="align-items3">
+  <div class="num3">1</div>
+  <div class="num3">2</div>
+  <div class="num3">3</div>
+ </div>
+ 		<br>
+ <div class="align-items4">
+  <div class="num4">1</div>
+  <div class="num4">2</div>
+  <div class="num4">3</div>
+ </div>
+ 		<br>
+ <div class="align-items5">
+  <div class="num5">1</div>
+  <div class="num5">2</div>
+  <div class="num5">3</div>
+ </div>
+
+</div>
+
+ 이건 잘되는데
+ <div class="coo">
+  <div class="num5">1</div>
+  <div class="num5">2</div>
+  <div class="num5">3</div>
+ </div>
+
+
+
+
+
   </ul>
 
 </body>
