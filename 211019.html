@@ -10,13 +10,10 @@
 	h2,ol { color: red; }
 	sup { color: gray; }
 	.pink { color: hotpink; font-size: 20px; }
+	.red { color: red; font-size: 20px; }
 
-	.around{
-		display: flex;
-		width: 200px; height: 200px;
-		border: 1px solid black;
-		justify-content: space-between;
-		align-items: space-around;
+	.self{
+		align-self: flex-start;
 	}
 
 	.center2{
@@ -119,6 +116,11 @@
 	.num6{
 		width: 50px; height: 40px;
 		background: #6B66FF;
+	}
+
+	.num7{
+		width: 50px; height: 40px;
+		background: #EDAEFF;
 	}
 </style>
 
@@ -277,18 +279,103 @@
 		<div class="num6">2</div>
 		<div class="num6">3</div>
 	  </div>
-	  <div class="around">
-	   <div class="num6">1</div>
-		<div class="num6">2</div>
-		<div class="num6">3</div>
-	  </div>
-
-
-
 	 </div>
 
+	 <sup>
+	 		순서대로 flex-start, flex-end, center
+	 </sup>
 
+<hr>
+
+		<li>
+	 <strong class="pink">
+			교차축 개별 요소 배치 방법 : align-self
+	 </strong>
+		</li>
+			교차축에서 요소 하나의 배치방법을 결정하는 속성
+	<br> <br>
+
+	 <strong>
+	 		Ex
+	 </strong>
+	  <div style="display: flex;">
+	   <img src="img/cssflex7.jpg"
+	   alt="align-self">
+	    <div class="center2">
+	     <div class="num7">1</div>
+		  <div class="num7 self">2</div>
+		  <div class="num7">3</div>
+	      </div>
+	       </div>
+	 <sup>
+	 		한가지 요소만 지정해서 교차축 배치를 결정 할 수 있다
+	 </sup>
+
+<hr>
+
+		<li>
+	 <strong class="pink">
+	 		줄 바꿈 여부 : flex-weap
+	 </strong>
+		</li>
+			 플렉스랩의 역활은 플렉스컨테이너의 하위 요소들이 
+	<br>
+			 플렉스 컨테이너보다 커져버렸을때의 처리방법을 결정하는 속성
+	<br> <br>
+			<table border="1" width="600">
+   <caption>
+			하위 속성
+   </caption>
+
+	  <tbody> <tr bgcolor="#90E4FF"
+	  	 align="center">
+	 	<th>속성값</th>
+	 	<th>의미</th>
+	  </tr> </tbody>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">nowrap</td>
+	  	<td>
+	  		기본값, 
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">wrap</td>
+	  	<td>
+	  		주축으로 진행되던 하위요소들의 도합 크기가 플렉스 컨테이너의 축 길이보다 커졌을때 이것을 두행이상으로 처리함
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">wrap-reverse</td>
+	  	<td>
+	  		wrap의 반대방향으로 하겠다.
+	  	</td>
+	  </tr>
+  </table>
   </ul>
+
+<hr>
+
+  <ol>
+  	<strong class="red">내용정리</strong>
+
+  		<li>
+  			justify-content는 flexbox 주축에서의 요소 배치 방법을 정의한다.
+  		</li>
+  		<li>
+  			align-items는 flexbox교차축에서의 요소 배치 방법을 정의한다.
+  		</li>
+  		<li>
+  			align-self는 flexbox내 개별 요소의 교차축 배치 방법을 정의한다.
+  		</li>
+  		<li>
+  			flex-wrap는 개별 요소들의 도합 크기가 컨테이너 주축 길이보다 
+  	<br>
+  			커졌을 때의 처리 방법 및 방향을 정의한다.
+  		</li>
+  </ol>
   		
 </body>
 </html>
