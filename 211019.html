@@ -11,12 +11,36 @@
 	sup { color: gray; }
 	.pink { color: hotpink; font-size: 20px; }
 
-	.coo{
+	.around{
 		display: flex;
-		width: 300px; height: 100px;
+		width: 200px; height: 200px;
+		border: 1px solid black;
+		justify-content: space-between;
+		align-items: space-around;
+	}
+
+	.center2{
+		display: flex;
+		width: 200px; height: 200px;
 		border: 1px solid black;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.start{
+		display: flex;
+		width: 200px; height: 200px;
+		border: 1px solid black;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.end{
+		display: flex;
+		width: 200px; height: 200px;
+		border: 1px solid black;
+		justify-content: space-between;
+		align-items: flex-end;
 	}
 
 	.Ex{
@@ -91,13 +115,18 @@
 		width: 50px; height: 40px;
 		background: #B2EBF4;
 	}
+
+	.num6{
+		width: 50px; height: 40px;
+		background: #6B66FF;
+	}
 </style>
 
 </head>
 <body>
 
 <h2>flexbox 다루기</h2>
- <p>
+
  			flexbox를 다루기 위해 아래와 같은 속성들을 사용할 수 있다.
  </p>
  		<img src="img/cssflex3.jpg"
@@ -138,7 +167,7 @@
 			하위 속성
    </caption>
 
-	  <tbody><tr bgcolor="#90E4FF"
+	  <tbody> <tr bgcolor="#90E4FF"
 	  	 align="center">
 	 	<th>속성값</th>
 	 	<th>의미</th>
@@ -226,13 +255,40 @@
 			교차축 배치 방법 : align-items
 	 </strong>
 		</li>
-			주축을 flex-start로 만들었으니 교차축은 flex-end로 만듬
+			주축을 justify-content로 만들었으니 교차축은 align-items태그로 만듬
 	<br> <br>
+
 	 <strong>
 	 		Ex
 	 </strong>
+	 <div style="display: flex;">
+	  <div class="start">
+	   <div class="num6">1</div>
+		<div class="num6">2</div>
+		<div class="num6">3</div>
+	  </div>
+	  <div class="end">
+	   <div class="num6">1</div>
+		<div class="num6">2</div>
+		<div class="num6">3</div>
+	  </div>
+	  <div class="center2">
+	   <div class="num6">1</div>
+		<div class="num6">2</div>
+		<div class="num6">3</div>
+	  </div>
+	  <div class="around">
+	   <div class="num6">1</div>
+		<div class="num6">2</div>
+		<div class="num6">3</div>
+	  </div>
+
+
+
+	 </div>
+
 
   </ul>
-
+  		
 </body>
 </html>
