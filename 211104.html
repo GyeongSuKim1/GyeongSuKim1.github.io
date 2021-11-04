@@ -12,6 +12,49 @@
 	.pink { color: hotpink; font-size: 20px;}
 	.red { color: red; font-size: 20px; }
 
+	[value="hover"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+	[value="hover"]:hover{
+		background: #FAE0D4;
+	}
+
+	[value="active"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+	[value="active"]:active {
+		background: #FAE0D4;
+	}
+
+	[value="focus"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+	[value="focus"]:focus{
+		background: #FAE0D4;
+	}
+
+	[value="disabled"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+
+	.child{
+		display: inline-flex;
+		justify-content: space-between;
+		width: 50px; height: 50px;
+		background: #6D6CFF;
+		align }
+	.child:nth-child(2n) {
+		background-color: red;
+	}
+
+
+
+
+
  </style>
 </head>
 <body>
@@ -39,7 +82,7 @@
 			<table border="1" width="600">
 
    <caption>
-			의사 클래스
+			자주 사용하는 의사 클래스
    </caption>
 
 	  <tbody> <tr bgcolor="#90E4FF"
@@ -94,8 +137,45 @@
 
 <hr>
 
+  <input type="button" value="hover">
+   <input type="button" value="active">
+    <input type="button" value="focus">
+     <input type="button" value="disabled"
+      disabled>
+    <br>
+     <sup>
+     		=disabled는 비활성 요소 이므로 html 뒤에 써도 됨.
+     </sup>
+      <br> <br> 
 
+        <div class="child">1</div>
+         <div class="child">2</div>
+          <div class="child">3</div>
+           <div class="child">4</div>
+            <div class="child">5</div>
+    <br>
+     <sup>
+     		=.child:nth-child(2n) 즉 2의 배수마다 빨간색을 칠한다.
+     </sup>
 
+<hr>
 
+  <ol>
+	 <strong class="red">내용 정리</strong>
+
+   <li>
+   			의사클래스는 선택자에 추가하는 키워드이다.
+   </li>
+
+   <li>
+   			요소가 어떤 특정한 상태가 되었을 때 요소를 선택하겠다는 의미이다.
+   </li>
+
+   <li>
+   			콘텐츠 자체적인 내용 뿐 아니라 사용자와의 상호작용과 관련된 경우에도
+   	<br>
+   			스타일을 적용할 수 있어 유용함. (hover,active등등...)
+   </li>
+  </ol>
 </body>
 </html>
