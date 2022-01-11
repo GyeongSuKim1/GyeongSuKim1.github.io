@@ -26,3 +26,11 @@ h1 span:nth-child(6) {
 .search { 
 	width: 500px;
  }
+
+ion-icon {
+	position: absolute;
+	right: 10px;
+	bottom: 8px;
+	color: #555;
+	font-size: 1.5em;
+	cursor: pointer; }
