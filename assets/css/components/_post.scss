@@ -1,0 +1,91 @@
+// Post
+
+.hyde.posts {
+  font-family: Pretendard, sans-serif;
+
+  .hyde.post {
+    padding: 4rem 0;
+    line-height: 1.4;
+
+    @media (max-width: $small) {
+      padding: 2rem 0;
+    }
+
+    .hyde.hyde.post-thumbnail-wrapper {
+      overflow: hidden;
+      border-radius: 5px;
+      background-color: $dark;
+
+      .hyde.post-thumbnail {
+        height: 14rem;
+        background-size: cover;
+        background-position: 50% 50%;
+        opacity: 0.8;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05) translateZ(0);
+          opacity: 1;
+        }
+      }
+    }
+
+    .hyde.post-author-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        border-radius: 2rem;
+        margin-right: 0.75rem;
+
+        @media (max-width: $small) {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+      }
+
+      .hyde.post-author {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $dark;
+
+        @media (max-width: $small) {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .hyde.post-title {
+      font-size: 1.5rem;
+      color: $dark;
+      margin: 0.75rem 0 0 0;
+    }
+
+    .hyde.post-preview {
+      color: $dark;
+      margin: 0.75rem 0;
+      word-break: break-all;
+
+      @media (max-width: $small) {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+      }
+    }
+
+    .hyde.post-trail {
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+      font-size: 0.875em;
+      color: $gray;
+
+      .hyde.post-date {
+        font-weight: 450;
+      }
+    }
+  }
+}

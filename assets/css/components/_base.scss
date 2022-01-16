@@ -1,0 +1,115 @@
+@charset "utf-8";
+// Base
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hyde.header {
+  flex: 0 0 auto;
+}
+
+.hyde.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hyde.footer {
+  flex: 0 0 auto;
+}
+
+.hyde.content {
+  margin: 4rem auto;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  letter-spacing: -0.02rem;
+  color: $dark;
+  word-break: keep-all;
+
+  a {
+    word-break: break-all;
+  }
+
+  blockquote {
+    border-radius: 10px;
+    border-left: 7px solid $primary;
+    padding-left: 1rem;
+
+    p {
+      color: $dark300;
+    }
+  }
+
+  pre.highlight {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  code.highlighter-rouge {
+    background-color: $gray400;
+    padding: 0.15rem 0.2rem;
+    border-radius: 5px;
+    word-break: break-word;
+  }
+
+  &.about {
+    h2 {
+      margin-top: 3rem;
+    }
+  }
+
+  @media (max-width: $small) {
+    font-size: 1.05rem;
+  }
+
+  img {
+    margin: 1rem auto;
+
+    &.fix-scale {
+      @media (max-width: $extra-small) {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  img + em {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: $gray;
+  }
+
+  .hyde.comment {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+::selection {
+  background: $primary;
+  color: white;
+}

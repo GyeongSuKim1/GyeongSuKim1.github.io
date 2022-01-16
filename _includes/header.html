@@ -1,0 +1,26 @@
+<div class="hyde jumbotron">
+  <div class="hyde container">
+    <h1>{% if page.layout == "tag" %}<span class="hyde symbol">#</span>{% endif %}{{ page.title }}</h1>
+    {% if page.layout == "post" %} {% assign author = site.data.authors | where: 'name', page.author | first %} {% include tags.html %}
+    <div class="hyde post-desc">
+      {% if page.layout == "post" or page.layout == "project" %}
+      <div class="hyde post-info">
+        {% if author.image %}
+        <img src="{{ author.image }}" alt="author-profile" />
+        {% endif %}
+        <span class="hyde post-author">{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span>
+        <div class="hyde separator">∣</div>
+        <span class="hyde post-date">{{ page.date | date: '%Y년 %-m월 %-d일' }}</span>
+      </div>
+      {% endif %}
+      <a class="hyde post-back" href="/blog"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
+    </div>
+    {% else %}
+    <h2>{{ page.description }}</h2>
+    {% if page.layout == "tag" or page.layout == "project" %}
+    <div class="hyde post-desc reverse">
+      <a class="hyde post-back" href="/{{ page.url | split: '/' | shift | first }}"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
+    </div>
+    {% endif %} {% endif %}
+  </div>
+</div>

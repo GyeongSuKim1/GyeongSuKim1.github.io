@@ -1,0 +1,18 @@
+// Grid
+
+.hyde.container {
+  margin: 0 auto;
+  width: 60%;
+
+  @media (max-width: $large) {
+    width: 75%;
+  }
+
+  @media (max-width: $medium) {
+    width: 82.5%;
+  }
+
+  @media (max-width: $small) {
+    width: 90%;
+  }
+}

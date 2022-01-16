@@ -1,0 +1,123 @@
+// Misc
+
+.hyde.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+
+  img {
+    max-width: 10rem;
+    margin: 2rem auto;
+  }
+
+  p {
+    color: $gray;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.hyde.separator {
+  margin: 0 0.5rem;
+
+  @media (max-width: $small) {
+    margin: 0 0.25rem;
+  }
+}
+
+.utterances {
+  max-width: none;
+}
+
+hr {
+  height: 1px;
+  background-color: $gray400;
+  border: none;
+}
+
+.hyde.share {
+  display: flex;
+  justify-content: flex-end;
+
+  .hyde.share-item {
+    margin: 0 0.25rem;
+    color: $gray200;
+    cursor: pointer;
+
+    &:hover {
+      color: $gray300;
+    }
+  }
+}
+
+.hyde.name {
+  color: $gray;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.hyde.youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2em;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+// fallback font
+.hyde.symbol {
+  font-family: Pretendard, sans-serif;
+}
+
+.hyde.divider {
+  border-bottom: 1px solid $gray400;
+}
+
+.hyde.career-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .hyde.career {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+
+    .hyde.career-place {
+      font-weight: 700;
+      max-width: 50%;
+    }
+
+    .hyde.career-desc {
+      font-size: 1rem;
+      text-align: right;
+
+      p {
+        margin: 0;
+      }
+
+      .hyde.career-role {
+        font-weight: 500;
+      }
+
+      .hyde.career-duration {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: $gray;
+      }
+    }
+  }
+}

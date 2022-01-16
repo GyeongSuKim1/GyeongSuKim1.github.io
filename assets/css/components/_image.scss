@@ -1,0 +1,28 @@
+// Image
+
+.hyde.lightbox {
+  opacity: 0;
+  background: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, z-index 0.3s step-end;
+
+  &:target {
+    opacity: 1;
+    z-index: 999;
+    transition: opacity 0.3s ease, z-index 0.3s step-start;
+  }
+
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+  }
+}

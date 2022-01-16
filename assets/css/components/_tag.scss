@@ -1,0 +1,55 @@
+// Tag
+
+.hyde.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  .hyde.tag-wrapper {
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    
+    .hyde.tag {
+      display: inline-flex;
+      font-size: 1rem;
+    }
+
+    .hyde.tag-desc {
+      font-size: 1rem;
+    }
+
+    .hyde.tag-count {
+      font-size: 0.875rem;
+      font-weight: 450;
+      color: $gray;
+    }
+  }
+
+  &.skills {
+    a {
+      font-size: 1rem !important;
+    }
+  }
+
+  .hyde.tag {
+    background-color: $gray450;
+    border-radius: 1.5rem;
+    padding: 0.25rem 1rem;
+    margin: 0 0.5rem 0.5rem 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+
+    @media (max-width: $small) {
+      font-size: 0.75rem;
+    }
+
+    &:hover {
+      background-color: $gray400;
+    }
+  }
+}
+
+.hyde.header-tags {
+  margin-top: 0.5rem;
+  font-family: Pretendard, sans-serif;
+}

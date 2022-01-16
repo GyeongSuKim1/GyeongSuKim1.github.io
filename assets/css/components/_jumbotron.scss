@@ -1,0 +1,99 @@
+// Jumbotron
+
+.hyde.jumbotron {
+  color: white;
+  background: linear-gradient(45deg, $primary 35%, $secondary 100%);
+  padding: 2rem 0 1.875rem 0;
+
+  &.main {
+    flex: 1 0 auto;
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 8rem 0 0 0;
+
+      @media (max-width: $small) {
+        margin: 6rem 0 0 0;
+        font-size: 3rem;
+      }
+    }
+
+    h2 {
+      margin: 1rem 0 1.75rem 0;
+      word-break: keep-all;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 6rem 0 0 0;
+    word-break: keep-all;
+    animation: fade-slide-up 0.5s both;
+
+    @media (max-width: $small) {
+      font-size: 2.5rem;
+    }
+  }
+
+  h2 {
+    font-family: Pretendard, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    animation: fade-slide-up 0.5s 0.1s both;
+    word-break: keep-all;
+  }
+
+  .hyde.main-desc {
+    font-size: 1.25rem;
+  }
+
+  .hyde.post-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-family: Pretendard, sans-serif;
+    font-size: 0.875rem;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: $small) {
+      font-size: 0.75rem;
+    }
+
+    .hyde.post-info {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        border-radius: 2rem;
+        margin-right: 0.75rem;
+        background: $gray300;
+      }
+
+      .hyde.post-author {
+        font-weight: 500;
+      }
+
+      .hyde.post-date {
+        font-weight: 350;
+      }
+    }
+
+    .hyde.post-back {
+      color: white;
+      font-weight: 600;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: $gray300;
+      }
+    }
+  }
+}

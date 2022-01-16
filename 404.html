@@ -1,25 +1,14 @@
 ---
-permalink: /404.html
-layout: default
+title: 404 Not Found
+description: 요청하신 페이지를 찾을 수 없습니다.
+permalink: "404"
+visible: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="hyde empty">
+  <img src="/assets/images/waldo.png" alt="not_found" />
+  <div class="hyde btn-group">
+    <a onclick="history.back()" class="hyde btn btn-primary">이전 페이지</a>
+    <a href="/" class="hyde btn btn-default">홈으로 가기</a>
+  </div>
 </div>
