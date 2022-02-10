@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport"content=" width=device-width, initial-scale=1.0">
+	<title>211104</title>
+
+ <style>
+	h3 { color: hotpink; }
+	h2,ol { color: red; }
+	sup { color: gray; }
+	.pink { color: hotpink; font-size: 20px;}
+	.red { color: red; font-size: 20px; }
+
+	[value="hover"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+	[value="hover"]:hover{
+		background: #FAE0D4;
+	}
+
+	[value="active"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+	[value="active"]:active {
+		background: #FAE0D4;
+	}
+
+	[value="focus"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+	[value="focus"]:focus{
+		background: #FAE0D4;
+	}
+
+	[value="disabled"] {
+		width: 100px; height: 30px;
+		background: #D9E5FF; color: black;
+		border: none; border-radius: 8px;}
+
+	.child{
+		display: inline-flex;
+		justify-content: space-between;
+		width: 50px; height: 50px;
+		background: #6D6CFF;
+		align }
+	.child:nth-child(2n) {
+		background-color: red;
+	}
+
+ </style>
+</head>
+<body>
+
+<h2>의사 클래스</h2>
+ <p>
+ 			의사클래스(가상클래스)는 선택자에 추가하는 키워드로, 요소가 어떤 특정한
+ 	<br>
+ 			상태가 되었을 때 요소를 선택하겠다는 의미.
+ 	<br>
+  <div>
+ 		<img src="img/css의사클래스.jpg"
+ 		 alt="의사클래스">
+ 		  <img src="img/css의사클래스2.jpg"
+ 		   alt="호버">
+  </div>
+ 	<br>
+ 	 <sup>
+ 	 		=h1요소에 마우스 커서가 올라오면(hover) 글자를 빨간색으로 하겠다!
+ 	 </sup>
+ </p>
+
+<hr>
+
+			<table border="1" width="600">
+
+   <caption>
+			자주 사용하는 의사 클래스
+   </caption>
+
+	  <tbody> <tr bgcolor="#90E4FF"
+	  	 align="center">
+	 	<th>의사클래스</th>
+	 	<th>의미</th>
+	  </tr> </tbody>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">hover</td>
+	  	<td>
+	  		마우스 포인터가 요소에 올라가 있다.
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">active</td>
+	  	<td>
+	  		사용자가 요소를 활성화 했다.(Ex : 마우스로 누르기와 같은)
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">focus</td>
+	  	<td>
+	  		요소가 포커스를 받고 있다.
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">disabled</td>
+	  	<td>
+	  		비활성 상태의 요소이다.
+	  	</td>
+	  </tr>
+
+	  <tr align="center">
+	  	<td bgcolor="#A4FFFF">nth-child()</td>
+	  	<td>
+	  		형제 사이에서의 순서에 따라 요소를 선택한다.
+	   	</td>
+	  </tr>
+			</table>
+
+	 <sup>
+	 		=그 외 사용가능한 의사 클래스가 궁금하다면 링크를 참고!
+	<br>
+		<a href="https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes" target="_blank">
+		 	https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes
+		</a>
+	 </sup>
+
+<hr>
+
+  <input type="button" value="hover">
+   <input type="button" value="active">
+    <input type="button" value="focus">
+     <input type="button" value="disabled"
+      disabled>
+    <br>
+     <sup>
+     		=disabled는 비활성 요소 이므로 html 뒤에 써도 됨.
+     </sup>
+      <br> <br> 
+
+        <div class="child">1</div>
+         <div class="child">2</div>
+          <div class="child">3</div>
+           <div class="child">4</div>
+            <div class="child">5</div>
+    <br>
+     <sup>
+     		=.child:nth-child(2n) 즉 2의 배수마다 빨간색을 칠한다.
+     </sup>
+
+<hr>
+
+  <ol>
+	 <strong class="red">내용 정리</strong>
+
+   <li>
+   			의사클래스는 선택자에 추가하는 키워드이다.
+   </li>
+
+   <li>
+   			요소가 어떤 특정한 상태가 되었을 때 요소를 선택하겠다는 의미이다.
+   </li>
+
+   <li>
+   			콘텐츠 자체적인 내용 뿐 아니라 사용자와의 상호작용과 관련된 경우에도
+   	<br>
+   			스타일을 적용할 수 있어 유용함. (hover,active등등...)
+   </li>
+  </ol>
+</body>
+</html>

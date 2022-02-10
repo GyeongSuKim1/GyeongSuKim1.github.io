@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport"
+	  content="width=device-width, initial-scale=1.0">
+	<title>210924</title>
+
+	<style>
+		.px{color: red; font-size: 20px;}
+		.pink{color: hotpink; font-size: 20px;}
+		h2{ color: red; }
+		sup{ color: gray; }
+		#red{ color: red; font-size: 20px; }
+	</style>
+
+</head>
+<body>
+
+<h2>블록 레벨,인라인 요소</h2>
+
+<ul>
+		<li>
+	 <strong class="pink">
+	 		블록 레벨 요소
+	 </strong>
+		</li>
+			자기가 속한 영역의 너비를 모두 차지하여 블록을 형성
+	<br>
+	 <small style="color: gray;">
+			Ex)div,p,h1 등
+	</small> 
+
+		<li>
+	 <strong class="pink">
+	 		인라인 요소
+	 </strong>
+		</li>
+			자기에게 필요한 만큼의 공간만 차지
+	 <small style="color: gray;">
+	 		Ex)span,a 등
+	 </small>
+</ul>
+<hr>
+
+<h2>이 두가지 요소를 묶는법</h2>
+
+ <p>
+ 	 <strong class="pink">
+ 	 		display속성
+ 	 </strong>
+ 	<br> <br>
+ 	 		display속성은 요소를 블록과 인라인 요소 중 어느 쪽으로 처리할지 정의함
+ 	<br>
+ 		<img src="img/cssDisplay.jpg"
+ 		 alt="디스플레이">
+ </p>
+
+  <table border="1" bgcolor="white" width="650">
+
+   <caption>
+   	 <strong class="pink">
+   	 		display속성 값
+   	</strong>
+   </caption>
+
+ 	<tr bgcolor="sky bule">
+ 	 	 <th>속성 값</th>
+ 	 	 <th>처리 값</th>
+ 	 </tr>
+
+ 	 <tr align="center">
+ 	 	 <td bgcolor="cyan">inline</td>
+ 	 	 <td>인라인으로 처리</td>
+ 	 </tr>
+
+ 	 <tr align="center">
+ 	 	 <td bgcolor="cyan">block</td>
+ 	 	 <td>블록 레벨로 처리</td>
+ 	 </tr>
+
+ 	 <tr align="center">
+ 	 	 <td bgcolor="cyan">inline-block</td>
+ 	 	 <td>인라인으로 배치하되, 블록 레벨 요소의 속성을 추가할수 있도록 처리</td>
+ 	 </tr>
+
+ 	 <tr align="center">
+ 	 	 <td bgcolor="cyan">none</td>
+ 	 	 <td>디스플레이(표시)하지 않음</td>
+ 	 </tr>
+  </table>
+  
+ 	 <sup>	
+ 			=이 외에도 다양한 속성값이 있음
+     </sup>
+<hr>
+
+ <p>
+ 	 <strong class="pink">
+ 	 		border 속성
+ 	 </strong>
+ 	<br> <br>
+ 			border속성을 사용하면 요소가 차지하고 있는 영역에 테두리를
+ 	<br>
+ 			그릴수 있음. border속성에는 속성값으로 테두리의 두께, 모양, 크기 등을
+ 	<br>
+ 			함께 지정할 수 있음, 이러한 속성을'단축속성' 이라고 함
+ 	<br>
+ 	 <strong>Ex</strong>
+ 	<br>
+ 		<img src="img/cssborder.jpg"
+ 		 alt="border" width="500">
+ 	<br>
+ 	 <sup>
+ 	 		=두께가 3px인 직선모양(solid)의 회색(gray)테두리를 만든것
+ 	 </sup>
+ </p>
+
+  <table border="1" bgcolor="white" width="650">
+    <caption>
+     <strong class="pink">
+     		dorder의 하위 속성
+     </strong>
+    </caption>
+
+    <tr bgcolor="sky bule">
+     <th>속성명</th>
+     <th>속성값</th>
+    </tr>
+
+    <tr align="center">
+     <td bgcolor="cyan">dorder-color</td>
+     <td>color정의 방식과 동일</td>
+    </tr>
+
+    <tr align="center">
+     <td bgcolor="cyan">border-width</td>
+     <td>thin, mediun, thick 등의 키워도 또는 px,em,rem 등의 단위</td>
+    </tr>
+
+    <tr align="center">
+     <td bgcolor="cyan">border-style</td>
+     <td>none(기본값), solid(직선), dotted(점선), deshed(긴 점선) 등등</td>
+    </tr>
+ </table>
+ 	 <sup>
+ 	 		border속성에 지정하는 값들을 따로따로 지정할 수도 있다.
+ 	 </sup>
+<hr>
+
+ <ol style="color: red;">
+  <strong id="red">
+  			내용 정리
+  </strong>
+  		<li>
+   			display속성은 요소의 블록 레벨,인라인 여부를 변경 처리할 수 있다
+    	</li>
+    	<li>
+    		display속성은 요소를 배치할 레이아웃을 결정할 때도 사용될 수 있다
+    	</li>
+    	<li>
+    		border속성은 요소가 차지하는 영역에 테두리를 그릴 수 있다
+    	</li>
+    	<li>
+    		border은 여러가지 속성을 함께 정의할 수 있는 '단축속성'
+    	</li>
+    	<li>
+    		border의 하위 속성은 border-style, border-width, border-color 이다
+    	</li>
+ </ol>
+
+</body>
+</html>

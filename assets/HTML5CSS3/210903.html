@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html>
+	<head> 
+   <meta charset="utf-8">
+		<title> 210903 </title> 
+	</head>
+ <body>
+
+<h2>입력창 input의 핵심,type속성 (자주 쓰이는것들)</h2>
+	<input name="text" type="text" maxlength="4" 
+	placeholder="입력창" /> text로 입력창 만들기 maxlength로 글자수 설정, placeholder로 검색창안에 텍스트넣기<br> <br> <!--문자를 받는 입력요소-->
+
+	<input name="button" type="button" value="value" /> button로 버튼 추가 한후 value로 값 지정가능 <br> <br> <!--클릭을 할수 입력요소-->
+
+	<input name="color" type="color" /> color로 색 고르기 <br> <br> <!--색상을 선택할수 있는 입력요소-->
+
+	<input name="score" type="range" max="100" min="0" step="10" /> range는 범위가 주어짐 수치와 관련된 맥스,민,스텝을 사용해 최소값과 최대값을 넣어주면 좋음 <br> <br> <!--값의 범위를 지정할수 있는 입력요소-->
+
+	<input name="birthday" type="date" /> date로 날짜 선택하기 <br> <br> <!--날짜를 선택할수 있는 입력요소-->
+
+	<a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input" target="_blank">
+	  <input name="Type" type="button" style="color: blue;" value="클릭하면 여러가지 Type이 있음" /> <!--name로 input요소를 구별할 수 있다.-->
+	</a> <br> <br> <br>
+		input외 많은 다른 입력요소가 있지만 2가지만 알아보자
+	<br> <br>
+
+	<select name="abc">
+		<option value="a"> 선택 메뉴 </option>
+		<option value="b"> selcet,option으로 </option>
+		<option value="c"> 메뉴창을 </option>  
+		<option value="d"> 설정가능 </option>
+		<option value="e"> name,value사용가능 </option>
+	</select> <br> <br>
+
+	 <textarea name="letter" cols="20" rows="5">
+	  </textarea>
+ </body>
+ </html>
