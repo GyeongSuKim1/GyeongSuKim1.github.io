@@ -1,9 +1,9 @@
 title: 김경수
-description: 나만의 연습장
+description: Gyeongsu Kim<br>FE Developer
 url: "https://gyeongsukim1.github.io/"
 github: gyeongsukim1
 email: rla04722@naver.com
-google_analytics: <YOUR UA TOKEN>
+google_analytics: 'G-M2RMDEMNXV'
 
 exclude: [README.md, Gemfile, Gemfile.lock]
 
