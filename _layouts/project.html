@@ -8,4 +8,11 @@ layout: default
   {% endif %} {% if page.youtube %}
   <div class="hyde youtube" id="{{ page.youtube }}"></div>
   {% endif %} {{ content }}
+  {% if site.comments.enabled %}
+  <div class="hyde comment">
+    <hr />
+    <h2>댓글</h2>
+    {% include comment.html %}
+  </div>
+  {% endif %}
 </div>
