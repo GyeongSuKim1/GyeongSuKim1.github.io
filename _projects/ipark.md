@@ -4,8 +4,9 @@ description:
 image: ipark.png
 date: 2022-08-16
 ---
+<hr>
 
-<h1><a style="color: skyblue;" href="/assets/PORTFOLI_Ver_01-1.pdf">PORTFOLI | 클릭 해주세요</a></h1>
+<h1><a style="color: #5954ED;" href="/assets/PORTFOLI_Ver_01-1.pdf">PORTFOLI | 클릭 해주세요</a></h1>
 
 <hr>
 
@@ -20,19 +21,22 @@ frontend repo -> https://github.com/2JYK/iPark_frontend<br>
 <br>
 
 # ⚙ 개발환경
-## back-end : <img src="https://img.shields.io/badge/python-3.9.10-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+## back-end : python(3.9.10), Django
 
-## front-end : <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+## front-end : HTML5/CSS3, JavaScript, JQuery
 
-## deploy : <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white"> <img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
+## deploy : Docker, AWS
+
 ## API : 
 - SearchParkInfoService | Seoul OpenAPI
 - NAVER Maps JavaScript API V3
 - REST API | Kakao
 <br>
 
-# 🚀 역할
-![역할](https://user-images.githubusercontent.com/89643366/182292718-d8d7c112-19dd-4550-bb73-7c6ce97cc63b.png)
+# 🚀 수행 역할
+- 메인페이지
+- 커뮤니티
+- 페이지네이션
 
 <br>
 
