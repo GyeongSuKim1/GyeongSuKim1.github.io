@@ -6,7 +6,7 @@ date: 2022-08-16
 ---
 <hr>
 
-<h1><a style="color: #5954ED;" href="/assets/PORTFOLI_Ver_01-1.pdf">PORTFOLI | 클릭 해주세요</a></h1>
+<h1><a style="color: #5954ED;" href="/assets/PORTFOLI_Ver_01-2.pdf">PORTFOLI | 클릭 해주세요</a></h1>
 
 <hr>
 
@@ -21,11 +21,11 @@ frontend repo -> https://github.com/2JYK/iPark_frontend<br>
 <br>
 
 # ⚙ 개발환경
-## back-end : python(3.9.10), Django
+#### back-end : python(3.9.10), Django
 
-## front-end : HTML5/CSS3, JavaScript, JQuery
+#### front-end : HTML5/CSS3, JavaScript, JQuery
 
-## deploy : Docker, AWS
+#### deploy : Docker, AWS
 
 ## API : 
 - SearchParkInfoService | Seoul OpenAPI
@@ -37,6 +37,8 @@ frontend repo -> https://github.com/2JYK/iPark_frontend<br>
 - 메인페이지
 - 커뮤니티
 - 페이지네이션
+- 기획
+- FE
 
 <br>
 
