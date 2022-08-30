@@ -6,7 +6,8 @@ date: 2022-08-16
 ---
 <hr>
 
-<h1><a style="color: #5954ED;" href="/assets/PORTFOLI_Ver_01-2.pdf">PORTFOLI | 클릭 해주세요</a></h1>
+<h1><a style="color: #5954ED; border: solid 3px #5954ED; padding: 3px;"
+ href="/assets/PORTFOLI_Ver_01-2.pdf">PORTFOLI | 클릭 해주세요</a></h1>
 
 <hr>
 
@@ -255,4 +256,3 @@ frontend repo -> https://github.com/2JYK/iPark_frontend<br>
 <img width="946" alt="스크린샷 2022-08-18 오후 1 19 53" src="https://user-images.githubusercontent.com/99387514/185292957-a321a78f-35e2-415e-898a-319c8ec9ca49.png">
 
 <img width="927" alt="스크린샷 2022-08-18 오후 1 20 09" src="https://user-images.githubusercontent.com/99387514/185292976-b68e1ae6-630c-4bcf-a510-47db46ccd59e.png">
-
